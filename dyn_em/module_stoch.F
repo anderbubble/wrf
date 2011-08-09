@@ -887,6 +887,7 @@ contains
  
  
         seed1 = newtime+iphys+nens*1000000
+        idiv = 7 ! just some non-unity divisor
         seed2 = mod(newtime+iphys+nens*1000000,idiv)
         if(is_print) print *,'Rand_seed (iphys/newtime/idiv):',iphys,newtime,idiv,nens
 
